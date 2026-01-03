@@ -323,6 +323,154 @@ body {
     line-height: 1.8;
 }
 
+/* Climate Change Section */
+.climate-change {
+    padding: 5rem 0;
+    background: var(--light-bg);
+}
+
+.climate-change h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: var(--text-dark);
+}
+
+.climate-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.climate-details {
+    background: white;
+    border-radius: var(--border-radius);
+    margin-bottom: 1.5rem;
+    box-shadow: var(--box-shadow);
+    border: 2px solid transparent;
+    transition: var(--transition);
+    overflow: hidden;
+}
+
+.climate-details:hover {
+    border-color: var(--primary-color);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.climate-summary {
+    padding: 1.5rem 2rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    cursor: pointer;
+    list-style: none;
+    transition: var(--transition);
+    background: linear-gradient(to right, transparent, rgba(74, 144, 226, 0.05));
+    display: flex;
+    align-items: center;
+}
+
+.climate-summary::-webkit-details-marker {
+    display: none;
+}
+
+.climate-summary::before {
+    content: '▶';
+    display: inline-block;
+    margin-right: 1rem;
+    transition: transform 0.3s ease;
+    color: var(--primary-color);
+}
+
+.climate-details[open] .climate-summary::before {
+    transform: rotate(90deg);
+}
+
+.climate-summary:hover {
+    background: linear-gradient(to right, transparent, rgba(74, 144, 226, 0.1));
+    padding-left: 2.5rem;
+}
+
+.climate-details-content {
+    padding: 0 2rem 2rem 2rem;
+    animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.climate-details-content p {
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    text-align: justify;
+}
+
+.climate-figure {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.climate-image {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: var(--transition);
+}
+
+.climate-image:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.climate-caption {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #888;
+    font-style: italic;
+}
+
+.climate-sources {
+    list-style: none;
+    padding: 0;
+}
+
+.climate-sources li {
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.climate-sources li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    line-height: 1;
+}
+
+.climate-sources a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: var(--transition);
+    line-height: 1.6;
+}
+
+.climate-sources a:hover {
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+
 /* Timeline Section */
 .timeline {
     padding: 5rem 0;
@@ -575,6 +723,19 @@ body {
     .social-links {
         justify-content: center;
     }
+
+    .climate-summary {
+        font-size: 1.1rem;
+        padding: 1.2rem 1.5rem;
+    }
+
+    .climate-details-content {
+        padding: 0 1.5rem 1.5rem 1.5rem;
+    }
+
+    .climate-image {
+        border-radius: 8px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -598,5 +759,27 @@ body {
     .about h2,
     .timeline h2 {
         font-size: 2rem;
+    }
+
+    .climate-change h2 {
+        font-size: 2rem;
+    }
+
+    .climate-summary {
+        font-size: 1rem;
+        padding: 1rem;
+    }
+
+    .climate-summary::before {
+        margin-right: 0.5rem;
+    }
+
+    .climate-details-content {
+        padding: 0 1rem 1rem 1rem;
+    }
+
+    .climate-sources li {
+        padding-left: 1rem;
+        font-size: 0.9rem;
     }
 }
