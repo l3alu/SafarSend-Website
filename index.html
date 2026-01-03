@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safar Send</title>
+    <meta name="description" content="Safar Send - Fast, secure, and reliable package delivery app. Download now on Google Play and App Store.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="assets/logo.png">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="logo-section">
+                <img src="assets/logo.svg" alt="SafarSend Logo" class="logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <div class="logo-placeholder" style="display: none;">
+                    <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="30" cy="30" r="30" fill="#4A90E2"/>
+                        <path d="M30 15L40 25H35V35H25V25H20L30 15Z" fill="white"/>
+                        <path d="M20 40H40V45H20V40Z" fill="white"/>
+                    </svg>
+                </div>
+                <h1>Safar Send</h1>
+            </div>
+            <nav class="nav">
+                <a href="#about">About</a>
+                <a href="#timeline">Updates</a>
+                <a href="https://documents.safarsend.app" target="_blank">Legal Documents</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section with Slider -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2 class="motto">Connect. Send.</h2>
+                <h3 class="motto">Travel. Earn.</h3>
+                <p class="tagline">Connect with people sharing your path</p>
+                
+                <!-- App Slider -->
+                <div class="slider-container">
+                    <div class="slider">
+                        <div class="slide active">
+                            <img src="assets/screenshot1.png" alt="SafarSend Screenshot 1" onerror="this.src='data:image/svg+xml,%3Csvg width=\'300\' height=\'600\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Crect width=\'300\' height=\'600\' fill=\'%234A90E2\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' font-size=\'24\' fill=\'white\' text-anchor=\'middle\' dominant-baseline=\'middle\'%3EApp Screen 1%3C/text%3E%3C/svg%3E'">
+                        </div>
+                        <div class="slide">
+                            <img src="assets/screenshot2.png" alt="SafarSend Screenshot 2" onerror="this.src='data:image/svg+xml,%3Csvg width=\'300\' height=\'600\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Crect width=\'300\' height=\'600\' fill=\'%2366BB6A\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' font-size=\'24\' fill=\'white\' text-anchor=\'middle\' dominant-baseline=\'middle\'%3EApp Screen 2%3C/text%3E%3C/svg%3E'">
+                        </div>
+                        <div class="slide">
+                            <img src="assets/screenshot3.png" alt="SafarSend Screenshot 3" onerror="this.src='data:image/svg+xml,%3Csvg width=\'300\' height=\'600\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Crect width=\'300\' height=\'600\' fill=\'%23FFA726\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' font-size=\'24\' fill=\'white\' text-anchor=\'middle\' dominant-baseline=\'middle\'%3EApp Screen 3%3C/text%3E%3C/svg%3E'">
+                        </div>
+                    </div>
+                    <button class="slider-btn prev" aria-label="Previous slide">&lt;</button>
+                    <button class="slider-btn next" aria-label="Next slide">&gt;</button>
+                    <div class="slider-dots">
+                        <span class="dot active" data-slide="0"></span>
+                        <span class="dot" data-slide="1"></span>
+                        <span class="dot" data-slide="2"></span>
+                    </div>
+                </div>
+
+                <!-- Download Buttons -->
+                <div class="download-buttons">
+                    <a href="https://play.google.com/store/apps/details?id=com.safarsend" class="btn btn-google-play" target="_blank" rel="noopener">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 20.5V3.5C3 2.91 3.34 2.39 3.84 2.15L13.69 12L3.84 21.85C3.34 21.6 3 21.09 3 20.5Z" fill="currentColor"/>
+                            <path d="M16.81 15.12L6.05 21.34L14.54 12.85L16.81 15.12Z" fill="currentColor"/>
+                            <path d="M20.16 10.81C20.5 11.08 20.75 11.5 20.75 12C20.75 12.5 20.53 12.9 20.18 13.18L17.89 14.5L15.39 12L17.89 9.5L20.16 10.81Z" fill="currentColor"/>
+                            <path d="M6.05 2.66L16.81 8.88L14.54 11.15L6.05 2.66Z" fill="currentColor"/>
+                        </svg>
+                        <div>
+                            <span class="btn-subtitle">GET IT ON</span>
+                            <span class="btn-title">Google Play</span>
+                        </div>
+                    </a>
+                    <a href="https://apps.apple.com/app/safarsend/id123456789" class="btn btn-app-store" target="_blank" rel="noopener">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.05 20.28C16.1 21.23 15.09 20.25 14.09 19.79C13.04 19.32 12.07 19.3 10.97 19.79C9.58 20.41 8.85 20.35 8.03 19.79C4.25 16.24 4.89 10.59 9.07 10.35C10.15 10.41 10.89 10.98 11.53 11.03C12.55 10.82 13.53 10.24 14.61 10.32C15.93 10.43 16.93 10.93 17.57 11.82C14.87 13.47 15.51 17.19 17.92 18.24C17.44 19.45 16.84 20.64 17.05 20.28ZM11.47 10.32C11.36 8.33 13.03 6.72 14.88 6.53C15.18 8.9 12.83 10.57 11.47 10.32Z" fill="currentColor"/>
+                        </svg>
+                        <div>
+                            <span class="btn-subtitle">Download on the</span>
+                            <span class="btn-title">App Store</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>What is Safar Send?</h2>
+            <div class="about-content">
+                <div class="about-box">
+                    <div class="about-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="18" cy="18" r="6" stroke="#4A90E2" stroke-width="2"/>
+                            <circle cx="30" cy="30" r="6" stroke="#4A90E2" stroke-width="2"/>
+                            <path d="M23 21L27 27" stroke="#4A90E2" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M12 24L8 28L12 32" stroke="#4A90E2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M36 16L40 20L36 24" stroke="#4A90E2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>Search and connect</h3>
+                    <p>Safar Send is a platform that brings people together by connecting travelers heading in a certain direction with individuals who need to send a package to the same destination. By making use of existing travel routes, it offers a more efficient, flexible, and community-driven way to deliver items, while helping travelers make better use of their journey and allowing senders to move packages in a faster and more personal way.</p>
+                </div>
+                <div class="about-box">
+                    <div class="about-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="8" y="12" width="32" height="24" rx="2" stroke="#66BB6A" stroke-width="2"/>
+                            <path d="M8 18L24 26L40 18" stroke="#66BB6A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="36" cy="32" r="6" fill="#66BB6A"/>
+                            <path d="M34 32L35.5 33.5L38 31" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>Real-time chat</h3>
+                    <p>The real chat feature of Safar Send enables seamless communication between travelers and senders, making coordination simple and reliable. Through the platform's built-in messaging system, users can discuss important details such as pickup and drop-off locations, delivery timing, package size, and any special handling instructions. This feature fosters trust and transparency, allowing both parties to ask questions, clarify expectations, and confirm arrangements before finalizing a delivery.</p>
+                </div>
+                <div class="about-box">
+                    <div class="about-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="24" cy="24" r="18" stroke="#FFA726" stroke-width="2"/>
+                            <ellipse cx="24" cy="24" rx="8" ry="18" stroke="#FFA726" stroke-width="2"/>
+                            <path d="M6 24H42" stroke="#FFA726" stroke-width="2"/>
+                            <path d="M12 14H36" stroke="#FFA726" stroke-width="2"/>
+                            <path d="M12 34H36" stroke="#FFA726" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>Multilingual</h3>
+                    <p>Safar Send's multilingual support makes the platform accessible and inclusive for users from diverse linguistic backgrounds. With full functionality in English, French, German, Arabic, Farsi/Persian, Spanish, and Turkish, travelers and senders can navigate the app and communicate comfortably in the language they know best. This broad language coverage not only enhances user experience by removing language barriers but also strengthens community connections across regions and cultures.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section id="timeline" class="timeline">
+        <div class="container">
+            <h2>Updates & Changes</h2>
+            <div class="timeline-container">
+                <!-- <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">January 2026</div>
+                        <h3>Version 0.1.0 - First Release (12 March 2026)</h3>
+                        <p>This is the first release of Safar Send.</p>
+                    </div>
+                </div> -->
+                <!-- <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">October 2025</div>
+                        <h3>Version 1.5 - Security Enhancement</h3>
+                        <p>Implemented end-to-end encryption for all file transfers. Added biometric authentication for enhanced security. Fixed various bugs and improved stability.</p>
+                    </div>
+                </div> -->
+                <!-- <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">July 2025</div>
+                        <h3>Version 1.2 - Feature Update</h3>
+                        <p>Added support for larger file transfers (up to 5GB). Introduced transfer history and favorites. Improved connection stability and added offline mode.</p>
+                    </div>
+                </div> -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">March 2026</div>
+                        <h3>Version 0.1.0 - Initial Launch</h3>
+                        <p>Safar Send officially launched on Google Play and App Store. Core features include filtering search, live chat, basic free trip promotion, and supporting seven languagse.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Safar Send</h3>
+                    <p>Connect with people sharing your path</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="https://documents.safarsend.app" target="_blank">Privacy Policy</a></li>
+                        <li><a href="https://documents.safarsend.app" target="_blank">Terms & Conditions</a></li>
+                        <li><a href="https://documents.safarsend.app" target="_blank">Guidlines</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="https://twitter.com/safarsend" target="_blank" rel="noopener" aria-label="Twitter">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22.46 6c-.85.38-1.75.64-2.7.76a4.7 4.7 0 0 0 2.07-2.6c-.9.54-1.9.93-2.98 1.14a4.7 4.7 0 0 0-8 4.28A13.3 13.3 0 0 1 1.64 4.16a4.7 4.7 0 0 0 1.46 6.27 4.66 4.66 0 0 1-2.13-.59v.06a4.7 4.7 0 0 0 3.77 4.6 4.72 4.72 0 0 1-2.12.08 4.7 4.7 0 0 0 4.39 3.26A9.43 9.43 0 0 1 0 19.54a13.29 13.29 0 0 0 7.18 2.1c8.62 0 13.33-7.14 13.33-13.33 0-.2 0-.4-.02-.6A9.51 9.51 0 0 0 22.46 6z"/>
+                            </svg>
+                        </a>
+                        <a href="https://facebook.com/safarsend" target="_blank" rel="noopener" aria-label="Facebook">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.99 3.66 9.12 8.44 9.88v-6.99H7.9V12h2.54V9.8c0-2.51 1.49-3.89 3.78-3.89 1.09 0 2.23.19 2.23.19v2.47h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.45 2.89h-2.33v6.99C18.34 21.12 22 16.99 22 12z"/>
+                            </svg>
+                        </a>
+                        <a href="https://instagram.com/safarsend" target="_blank" rel="noopener" aria-label="Instagram">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5a4.25 4.25 0 0 0 4.25 4.25h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5a4.25 4.25 0 0 0-4.25-4.25h-8.5zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 1.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7zM17.5 5.5a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                            </svg>
+                        </a>
+                        <a href="https://linkedin.com/company/safarsend" target="_blank" rel="noopener" aria-label="LinkedIn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 SafarSend. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
